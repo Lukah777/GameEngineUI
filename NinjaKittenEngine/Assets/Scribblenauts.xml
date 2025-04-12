@@ -1,0 +1,2465 @@
+<GameObject Name="TitleMenu" Enabled="true">
+    <GameObject Name="MenuBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/StartBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="MenuButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>111</X>
+            <Y>703</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/StartButton.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>PLAY</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>449</X>
+            <Y>713</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="MainMenu" Enabled="false">
+    <GameObject Name="MenuBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/MainBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="LanguageButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>1</X>
+            <Y>3</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LanguageButton.png</Image>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>LanguageMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="Main" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>200</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>MAIN</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>225</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="MenuButton1" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>300</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>PLAY</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>325</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>SelectHamster</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="MenuButton2" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>400</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>OPTIONS</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>425</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>OptionsMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="MenuButton3" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>QUIT</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>525</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>Quit</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="InputButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>600</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LittleButton.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>INPUT</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>147</X>
+            <Y>625</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>InputMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="FriendButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>788</X>
+            <Y>592</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LittleButton.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>FRIENDS</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>835</X>
+            <Y>617</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>FriendMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="CalcButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>461</X>
+            <Y>614</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalculatorIcon.png</Image>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>CalulatorApp</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="LanguageMenu" Enabled="false">
+    <GameObject Name="LanguagesBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LanguageBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="English" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>44</X>
+            <Y>44</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/America.png</Image>
+        </Component>
+        <Component Name="TranslationButtonComponent">
+            <Language>English</Language>
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="French" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>44</X>
+            <Y>188</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/France.png</Image>
+        </Component>
+        <Component Name="TranslationButtonComponent">
+            <Language>French</Language>
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="Italian" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>44</X>
+            <Y>332</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Italy.png</Image>
+        </Component>
+        <Component Name="TranslationButtonComponent">
+            <Language>Italian</Language>
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="German" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>44</X>
+            <Y>476</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/German.png</Image>
+        </Component>
+        <Component Name="TranslationButtonComponent">
+            <Language>German</Language>
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="Spanish" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>44</X>
+            <Y>620</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Spain.png</Image>
+        </Component>
+        <Component Name="TranslationButtonComponent">
+            <Language>Spanish</Language>
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="OptionsMenu" Enabled="false">
+    <GameObject Name="OptionsBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/OptionsBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="Options" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>150</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>OPTIONS</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>175</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="DifficultyButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>450</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>DIFFICULTY</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>475</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>DifficultyMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="VolumeButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>550</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>VOLUME</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>575</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>VolumeMenu</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="BackButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>663</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>35</X>
+            <Y>675</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="DifficultyMenu" Enabled="false">
+    <GameObject Name="DifficultyBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/DifficultyBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="Difficulty" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>DIFFICULTY</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>0</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="Hints" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>470</X>
+            <Y>100</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>HINTS</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>362</X>
+            <Y>125</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkbox.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="CheckboxComponent">
+            <On>true</On>
+            <GameObject>HintCheckmark</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="HintCheckmark" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>478</X>
+            <Y>111</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkmark.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="ToggleRespawns" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>470</X>
+            <Y>200</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>PERMADEATH</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>362</X>
+            <Y>225</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/ToggleTray.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="ToggleComponent">
+            <On>true</On>
+            <GameObject>RespawnToggleKnob</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="RespawnToggleKnob" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>477</X>
+            <Y>207</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/ToggleKnob.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>RESPAWN</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>662</X>
+            <Y>225</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="Easy" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>167</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>EASY</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>167</X>
+            <Y>600</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkbox.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="RadioButtonComponent">
+            <On>fasle</On>
+            <GameObject>EasyCheckmark</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="EasyCheckmark" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>175</X>
+            <Y>511</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkmark.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="Normal" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>NORMAL</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>467</X>
+            <Y>600</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkbox.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="RadioButtonComponent">
+            <On>true</On>
+            <GameObject>NormalCheckmark</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="NormalCheckmark" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>475</X>
+            <Y>511</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkmark.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="Hard" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>767</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>HARD</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>767</X>
+            <Y>600</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkbox.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="RadioButtonComponent">
+            <On>fasle</On>
+            <GameObject>HardCheckmark</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="HardCheckmark" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>775</X>
+            <Y>511</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkmark.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="BackButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>663</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>35</X>
+            <Y>675</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>OptionsMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="VolumeMenu" Enabled="false">
+    <GameObject Name="VolumeBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/VolumeBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="Volume" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>VOLUME</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>467</X>
+            <Y>0</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="Mute" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>50</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>MUTE</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>367</X>
+            <Y>75</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkbox.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="CheckboxComponent">
+            <On>true</On>
+            <GameObject>MuteCheckmark</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="MuteCheckmark" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>475</X>
+            <Y>61</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkmark.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="AudioToggle" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>137</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>MONO</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>367</X>
+            <Y>150</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/ToggleTray.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="ToggleComponent">
+            <On>true</On>
+            <GameObject>AudioToggleKnob</GameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="AudioToggleKnob" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>474</X>
+            <Y>144</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/ToggleKnob.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>STEREO</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>650</X>
+            <Y>150</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="SFXSlider" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>250</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>SFX</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>367</X>
+            <Y>225</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SliderGroove.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="SliderComponent">
+            <Value>0</Value>
+            <GameObject>SFXSliderKnob</GameObject>
+        </Component>
+        <Component Name="SoundComponent">
+            <File>Assets/SoundEffect.wav</File>
+        </Component>
+    </GameObject>
+    <GameObject Name="SFXSliderKnob" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>667</X>
+            <Y>225</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SliderKnob.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="MusicSlider" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>325</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>MUSIC</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>367</X>
+            <Y>300</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SliderGroove.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="SliderComponent">
+            <Value>0</Value>
+            <GameObject>MusicSliderKnob</GameObject>
+        </Component>
+        <Component Name="SoundComponent">
+            <File>Assets/Music.wav</File>
+            <Music>true</Music>
+        </Component>
+    </GameObject>
+    <GameObject Name="MusicSliderKnob" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>300</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SliderKnob.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="VoiceSlider" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>467</X>
+            <Y>400</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>VOICE</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>367</X>
+            <Y>375</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SliderGroove.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="SliderComponent">
+            <Value>0</Value>
+            <GameObject>VoiceSliderKnob</GameObject>
+        </Component>
+        <Component Name="SoundComponent">
+            <File>Assets/VoiceOver.wav</File>
+        </Component>
+    </GameObject>
+    <GameObject Name="VoiceSliderKnob" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>667</X>
+            <Y>375</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SliderKnob.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+    </GameObject>
+    <GameObject Name="BackButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>663</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>35</X>
+            <Y>675</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>OptionsMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="InputMenu" Enabled="false">
+    <GameObject Name="InputBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/InputBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="Paper" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>300</X>
+            <Y>125</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Paper.png</Image>
+        </Component>
+        <Component Name="InputFieldComponent">
+            <CursorX>350</CursorX>
+            <CursorY>175</CursorY>
+            <Width>600</Width>
+            <Height>550</Height>
+        </Component>
+    </GameObject>
+    <GameObject Name="MainMenuButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>295</X>
+            <Y>654</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>457</X>
+            <Y>679</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="PauseMenu" Enabled="false">
+    <GameObject Name="PauseBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/PauseBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="Pause" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>200</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>PAUSE</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>262</X>
+            <Y>225</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="ContinueButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>400</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>CONTINUE</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>262</X>
+            <Y>425</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>Game</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="QuitButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>600</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Button.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>QUIT</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>262</X>
+            <Y>625</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="Game" Enabled="false">
+    <GameObject Name="GameBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/GameBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="Hero" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>220</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Blank.png</Image>
+        </Component>
+        <Component Name="HeadSlotComponent">
+            <Image>Assets/Blank.png</Image>
+        </Component>
+        <Component Name="BodySlotComponent">
+            <Image>Assets/Blank.png</Image>
+        </Component>
+        <Component Name="HeroComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="CollisionComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy1" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>-50</X>
+            <Y>-50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy2" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>1100</X>
+            <Y>-50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy3" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>550</X>
+            <Y>1000</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy4" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>-150</X>
+            <Y>-550</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy5" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>1200</X>
+            <Y>-150</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy6" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>850</X>
+            <Y>1500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="Enemy7" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>950</X>
+            <Y>-800</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Enemy.png</Image>
+        </Component>
+        <Component Name="EnemyComponent"/>
+        <Component Name="AIComponent"/>
+        <Component Name="PhysicsComponent"/>
+        <Component Name="DeathComponent"/>
+    </GameObject>
+    <GameObject Name="HUD" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HUD.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="HealthTray" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>10</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HealthTray.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>100</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>400</X>
+            <Y>25</Y>
+            <W>100</W>
+            <H>25</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="HealthBar" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>105</X>
+            <Y>15</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HealthBar.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>100</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>0</X>
+            <Y>25</Y>
+            <W>100</W>
+            <H>25</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="Money" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>800</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Money.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>0</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>907</X>
+            <Y>25</Y>
+            <W>75</W>
+            <H>25</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="Hint" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>400</X>
+            <Y>700</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Click enemies to kill them</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>400</X>
+            <Y>700</Y>
+            <W>200</W>
+            <H>25</H>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="SelectHamster" Enabled="false">
+    <GameObject Name="CharacterBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CharacterBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="SelectAHamster" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>70</X>
+            <Y>100</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Select A Hamster</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>70</X>
+            <Y>100</Y>
+            <W>300</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="HamsterSpot" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>445</X>
+            <Y>100</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HamsterSpot.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Character</Slot>
+            <Image>Assets/HamsterSpot.png</Image>
+            <NavGameObject>SelectOutfit</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="HamsterWhite" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>745</X>
+            <Y>100</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HamsterWhite.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Character</Slot>
+            <Image>Assets/HamsterWhite.png</Image>
+            <NavGameObject>SelectOutfit</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="HamsterTan" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>445</X>
+            <Y>400</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HamsterTan.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Character</Slot>
+            <Image>Assets/HamsterTan.png</Image>
+            <NavGameObject>SelectOutfit</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="HamsterGray" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>745</X>
+            <Y>400</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HamsterGray.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Character</Slot>
+            <Image>Assets/HamsterGray.png</Image>
+            <NavGameObject>SelectOutfit</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="BackButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>663</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LittleButton.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>35</X>
+            <Y>675</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="SelectOutfit" Enabled="false">
+    <GameObject Name="OutfitBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/OutfitBackground.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="SelectAnOutfit" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>70</X>
+            <Y>100</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Select An Outfit</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>70</X>
+            <Y>100</Y>
+            <W>300</W>
+            <H>50</H>
+        </Component>
+    </GameObject>
+    <GameObject Name="Hero" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>100</X>
+            <Y>220</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Blank.png</Image>
+        </Component>
+        <Component Name="HeadSlotComponent">
+            <Image>Assets/Blank.png</Image>
+        </Component>
+        <Component Name="BodySlotComponent">
+            <Image>Assets/Blank.png</Image>
+        </Component>
+        <Component Name="HeroComponent"/>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>Game</NavGameObject>
+        </Component>
+    </GameObject>
+    <GameObject Name="HatBlack" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>365</X>
+            <Y>10</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HatBlack.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/HatBlack.png</Image>
+            <Height>95</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="HatWhite" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>585</X>
+            <Y>10</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HatWhite.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/HatWhite.png</Image>
+            <Height>95</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="HatGray" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>805</X>
+            <Y>10</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/HatGray.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/HatGray.png</Image>
+            <Height>95</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="SuitBlack" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>365</X>
+            <Y>-50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SuitBlack.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/SuitBlack.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="SuitWhite" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>585</X>
+            <Y>-50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SuitWhite.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/SuitWhite.png</Image>\
+			<Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="SuitGray" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>805</X>
+            <Y>-50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/SuitGray.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/SuitGray.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="DressBlack" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>365</X>
+            <Y>50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/DressBlack.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/DressBlack.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="DressBlue" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>585</X>
+            <Y>50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/DressBlue.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/DressBlue.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="DressPink" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>805</X>
+            <Y>50</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/DressPink.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/DressPink.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="ShimadaBlack" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>490</X>
+            <Y>325</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/ShimadaBlack.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/ShimadaBlack.png</Image>
+            <Height>200</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="ShimadaBlond" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>715</X>
+            <Y>325</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/ShimadaBlonde.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/ShimadaBlonde.png</Image>
+            <Height>200</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="TopknotBlack" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>490</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/TopknotBlack.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/TopknotBlack.png</Image>
+            <Height>132</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="TopknotBlond" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>715</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/TopknotBlonde.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Head</Slot>
+            <Image>Assets/TopknotBlonde.png</Image>
+            <Height>132</Height>
+            <yOffset>0</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="KimodoPink" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>365</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/KimodoPink.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/KimodoPink.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="KimodoOrange" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>585</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/KimodoOrange.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/KimodoOrange.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="KimodoBlue" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>805</X>
+            <Y>500</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/KimodoBlue.png</Image>
+        </Component>
+        <Component Name="EquipButtonComponent">
+            <Slot>Body</Slot>
+            <Image>Assets/KimodoBlue.png</Image>
+            <Height>68</Height>
+            <yOffset>188</yOffset>
+        </Component>
+    </GameObject>
+    <GameObject Name="BackButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>663</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LittleButton.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>35</X>
+            <Y>675</Y>
+            <W>150</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>SelectHamster</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="FriendMenu" Enabled="false">
+    <GameObject Name="FriendBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendBackground.png</Image>
+        </Component>
+        <Component Name="FriendListComponent">
+            <Names>Sarah
+Joe
+Lisa
+Eric
+Amy
+Luke
+Sophie
+Miles
+Darian
+Pace
+Isabella
+Drake
+Felice
+Jaylin
+Jeff
+Justin
+Kyle
+Mike
+Shilo
+Nick
+Josh
+Rez
+Adrian
+Jayden</Names>
+        </Component>
+    </GameObject>
+    <GameObject Name="FriendButton1" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Sarah</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>25</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton2" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>96</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>255</R>
+            <G>125</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Joe</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>121</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton3" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>192</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>255</R>
+            <G>200</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Lisa</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>217</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton4" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>288</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Eric</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>313</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton5" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>384</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>0</R>
+            <G>170</G>
+            <B>255</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Amy</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>409</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton6" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>480</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>0</R>
+            <G>0</G>
+            <B>255</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Luke</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>505</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton7" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>576</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>186</R>
+            <G>104</G>
+            <B>200</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Sophie</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>601</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="FriendButton8" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>270</X>
+            <Y>672</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/FriendButton.png</Image>
+            <R>236</R>
+            <G>64</G>
+            <B>122</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>Miles</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>462</X>
+            <Y>697</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="FriendButtonComponent"/>
+    </GameObject>
+    <GameObject Name="BackButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>0</X>
+            <Y>663</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/LittleButton.png</Image>
+            <R>0</R>
+            <G>255</G>
+            <B>0</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>BACK</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>35</X>
+            <Y>675</Y>
+            <W>100</W>
+            <H>50</H>
+        </Component>
+        <Component Name="NavButtonComponent">
+            <NavGameObject>MainMenu</NavGameObject>
+        </Component>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="CalulatorApp" Enabled="false">
+    <GameObject Name="CalculatorBackground" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>286</X>
+            <Y>75</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Calculator.png</Image>
+        </Component>
+    </GameObject>
+    <GameObject Name="TextBox" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>356</X>
+            <Y>205</Y>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>123</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>381</X>
+            <Y>205</Y>
+            <W>250</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalculatorComponent"/>
+    </GameObject>
+    <GameObject Name="Seven" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>356</X>
+            <Y>350</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>7</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>361</X>
+            <Y>355</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Eight" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>436</X>
+            <Y>350</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>8</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>451</X>
+            <Y>355</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Nine" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>516</X>
+            <Y>350</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>9</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>531</X>
+            <Y>355</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Add" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>596</X>
+            <Y>350</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>+</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>611</X>
+            <Y>355</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Four" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>356</X>
+            <Y>410</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>4</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>361</X>
+            <Y>415</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Five" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>436</X>
+            <Y>410</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>5</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>451</X>
+            <Y>415</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Six" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>516</X>
+            <Y>410</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>6</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>531</X>
+            <Y>415</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Subtract" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>596</X>
+            <Y>410</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>-</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>611</X>
+            <Y>415</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="One" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>356</X>
+            <Y>470</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>1</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>361</X>
+            <Y>475</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Two" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>436</X>
+            <Y>470</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>2</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>451</X>
+            <Y>475</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Three" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>516</X>
+            <Y>470</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>3</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>531</X>
+            <Y>475</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Multiplay" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>596</X>
+            <Y>470</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>*</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>611</X>
+            <Y>475</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="(" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>356</X>
+            <Y>530</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>(</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>361</X>
+            <Y>535</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Zero" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>436</X>
+            <Y>530</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>0</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>451</X>
+            <Y>535</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name=")" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>516</X>
+            <Y>530</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>)</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>531</X>
+            <Y>535</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Divide" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>596</X>
+            <Y>530</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>/</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>611</X>
+            <Y>535</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Equals" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>356</X>
+            <Y>590</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/EqualButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>=</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>411</X>
+            <Y>595</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+    <GameObject Name="Clear" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>596</X>
+            <Y>590</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/CalcButton.png</Image>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>CLR</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>611</X>
+            <Y>595</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="CalcButtonComponent"/>
+    </GameObject>
+</GameObject>
+
+<GameObject Name="MenuTool" Enabled="false">
+    <GameObject Name="EditButton" Enabled="true">
+        <Component Name="PositionComponent">
+            <X>935</X>
+            <Y>0</Y>
+        </Component>
+        <Component Name="ImageComponent">
+            <Image>Assets/Checkbox.png</Image>
+            <R>0</R>
+            <G>0</G>
+            <B>255</B>
+        </Component>
+        <Component Name="TextComponent">
+            <Text>EDIT</Text>
+            <Font>Assets/comicbd.ttf</Font>
+            <Size>24</Size>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+            <X>954</X>
+            <Y>15</Y>
+            <W>50</W>
+            <H>50</H>
+        </Component>
+        <Component Name="EditButtonComponent"/>
+    </GameObject>
+</GameObject>
